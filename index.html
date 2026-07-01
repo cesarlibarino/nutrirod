@@ -65,10 +65,13 @@
     }
 
     .logo-top {
-      width: 168px;
-      max-width: 48vw;
+      width: 152px;
+      max-width: 44vw;
+      max-height: 82px;
       height: auto;
       display: block;
+      object-fit: contain;
+      object-position: left center;
     }
 
     .section-title {
@@ -300,7 +303,7 @@
     }
 
     @media (max-width: 640px) {
-      .logo-top { width: 138px; }
+      .logo-top { width: 128px; max-height: 72px; }
       .section-title { letter-spacing: -0.045em; }
       .portrait-img { min-height: 440px; max-height: 520px; }
     }
@@ -319,17 +322,17 @@
   </a>
 
   <!-- HEADER -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-brand-greenDeep/92 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/10">
-    <div class="max-w-7xl mx-auto px-5 sm:px-6 h-24 flex items-center justify-between">
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/88 backdrop-blur-xl shadow-[0_16px_45px_rgba(35,56,41,0.06)]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 h-[104px] flex items-center justify-between">
       <a href="#inicio" class="flex items-center" aria-label="Nutrirod - início">
         <img src="logo.png" alt="Nutrirod Nutricionista" class="logo-top" />
       </a>
 
       <nav class="hidden lg:flex items-center gap-10">
-        <a href="#metodo" class="text-sm font-semibold tracking-wide text-white/75 hover:text-brand-orange transition">Método</a>
-        <a href="#especialidades" class="text-sm font-semibold tracking-wide text-white/75 hover:text-brand-orange transition">Atuação</a>
-        <a href="#como-funciona" class="text-sm font-semibold tracking-wide text-white/75 hover:text-brand-orange transition">Como funciona</a>
-        <a href="#sobre" class="text-sm font-semibold tracking-wide text-white/75 hover:text-brand-orange transition">O Nutri</a>
+        <a href="#metodo" class="text-sm font-semibold tracking-wide text-brand-greenDark/70 hover:text-brand-orange transition">Método</a>
+        <a href="#especialidades" class="text-sm font-semibold tracking-wide text-brand-greenDark/70 hover:text-brand-orange transition">Atuação</a>
+        <a href="#como-funciona" class="text-sm font-semibold tracking-wide text-brand-greenDark/70 hover:text-brand-orange transition">Como funciona</a>
+        <a href="#sobre" class="text-sm font-semibold tracking-wide text-brand-greenDark/70 hover:text-brand-orange transition">O Nutri</a>
         <a
           href="https://api.whatsapp.com/send/?phone=559191919567&text=Ol%C3%A1%2C%20quero%20agendar%20minha%20consulta%20com%20o%20Nutrirod&type=phone_number&app_absent=0&wame_ctl=1&source_surface=20"
           target="_blank"
@@ -339,12 +342,12 @@
         </a>
       </nav>
 
-      <button id="menu-toggle" class="lg:hidden text-white" aria-label="Abrir menu">
+      <button id="menu-toggle" class="lg:hidden text-brand-greenDark" aria-label="Abrir menu">
         <i data-lucide="menu" class="w-7 h-7"></i>
       </button>
     </div>
 
-    <div id="mobile-menu" class="hidden absolute top-24 left-0 w-full bg-brand-greenDeep border-b border-white/10 flex-col p-8 gap-5 lg:hidden shadow-xl">
+    <div id="mobile-menu" class="hidden absolute top-[104px] left-0 w-full bg-brand-greenDeep border-b border-white/10 flex-col p-8 gap-5 lg:hidden shadow-xl">
       <a href="#metodo" class="mobile-link text-lg font-medium py-1 text-white/90">Método</a>
       <a href="#especialidades" class="mobile-link text-lg font-medium py-1 text-white/90">Atuação</a>
       <a href="#como-funciona" class="mobile-link text-lg font-medium py-1 text-white/90">Como funciona</a>
