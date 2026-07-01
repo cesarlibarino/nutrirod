@@ -118,18 +118,46 @@
       border-color: rgba(255,130,0,.26);
     }
 
-    .stat-card {
-      background: rgba(255,255,255,.78);
+    .hero-proof {
+      background: rgba(255,255,255,.62);
       border: 1px solid rgba(35,56,41,.10);
-      box-shadow: 0 20px 55px rgba(21,36,26,.08);
+      box-shadow: 0 18px 55px rgba(21,36,26,.06);
       backdrop-filter: blur(18px);
-      transition: all .35s ease;
     }
 
-    .stat-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(255,130,0,.40);
-      box-shadow: 0 24px 70px rgba(21,36,26,.12);
+    .proof-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .proof-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: rgba(255,130,0,.12);
+      color: #ff8200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+    }
+
+    .proof-item strong {
+      display: block;
+      color: #233829;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -.02em;
+    }
+
+    .proof-item span {
+      display: block;
+      margin-top: 5px;
+      color: #6c6d71;
+      font-size: 12px;
+      line-height: 1.45;
     }
 
     .hero-noise {
@@ -367,18 +395,37 @@
           </a>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mt-14">
-          <div class="stat-card rounded-3xl p-5 sm:p-6">
-            <h3 class="text-3xl sm:text-4xl font-black text-brand-orange">01</h3>
-            <p class="text-brand-gray mt-2 text-xs uppercase tracking-wider leading-relaxed">Plano individual</p>
-          </div>
-          <div class="stat-card rounded-3xl p-5 sm:p-6">
-            <h3 class="text-3xl sm:text-4xl font-black text-brand-greenDark">100%</h3>
-            <p class="text-brand-gray mt-2 text-xs uppercase tracking-wider leading-relaxed">Focado na rotina</p>
-          </div>
-          <div class="stat-card rounded-3xl p-5 sm:p-6">
-            <h3 class="text-3xl sm:text-4xl font-black text-brand-orange">On</h3>
-            <p class="text-brand-gray mt-2 text-xs uppercase tracking-wider leading-relaxed">Presencial e online</p>
+        <div class="hero-proof max-w-2xl mt-14 rounded-[28px] p-5 sm:p-6">
+          <div class="grid sm:grid-cols-3 gap-6">
+            <div class="proof-item">
+              <div class="proof-icon">
+                <i data-lucide="clipboard-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong>Plano personalizado</strong>
+                <span>Estratégia montada para sua rotina, treino e objetivo.</span>
+              </div>
+            </div>
+
+            <div class="proof-item">
+              <div class="proof-icon">
+                <i data-lucide="target" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong>Foco em resultado</strong>
+                <span>Definição, hipertrofia ou performance com direção clara.</span>
+              </div>
+            </div>
+
+            <div class="proof-item">
+              <div class="proof-icon">
+                <i data-lucide="messages-square" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong>Online ou presencial</strong>
+                <span>Atendimento flexível para acompanhar sua evolução.</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
